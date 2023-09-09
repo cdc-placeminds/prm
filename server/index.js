@@ -32,6 +32,9 @@ app.use(
   );
 
 //Routes
+app.get("/",(req,res)=>{
+  res.send("Working")
+})
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/drive", driveRoutes);
